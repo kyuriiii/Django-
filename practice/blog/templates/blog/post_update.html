@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+		<link rel="stylesheet" href={% static 'css/blog.css' %}>
+	</head>
+    <body>
+		<div class="card">
+			<div class="card-body">
+				<form action="/blog/update/{{ post.id }}/" method="post">
+					{% csrf_token %}
+					<div class="form-group">
+						<label for="title">제목</label>
+						<input type="text" class="form-control" id="title" name="title" value="{{post.title}}">
+						
+						<label for="text">내용</label>
+						<input type="text" class="form-control" id="text" name="text" value="{{post.text}}">
+					</div>
+					<button type="submit" class="btn btn-sm btn-primary">수정하기</button>
+				</form>
+			</div>
+		</div>				
+    </body>
+</html>

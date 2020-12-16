@@ -1,0 +1,30 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+		<link rel="stylesheet" href={% static 'css/blog.css' %}>
+	</head>
+    <body>
+			<!--<a href="{% url 'create' %}">추가</a>-->
+		<div>
+			{% include 'blog/post_create.html' %}
+		</div>		
+		
+		<h5>{{user}}</h5>
+
+		<!--{{ posts }}
+		{% for post in posts %}
+			{{ post }}
+		{% endfor %}-->
+		
+		{% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h1><a href="">{{ post.title }}</a></h1> 
+				<a href="{% url 'update' post.id %}">수정</a>
+				<a href="{% url 'delete' post.id %}">삭제</a>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+		{% endfor %}
+    </body>
+</html>

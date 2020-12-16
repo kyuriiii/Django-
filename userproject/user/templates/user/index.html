@@ -1,0 +1,21 @@
+{% load static %}
+
+<html>
+	<head>
+	</head>
+	
+	<body>
+		<img src="{% static 'cat.jpg' %}">
+		<div>
+		<h5>{{session}}</h5>
+		</div>
+	
+		<a href="{% url 'register' %}">회원가입</a>
+		<br>
+		<a href="{% url 'login' %}">로그인</a>
+		<br>
+		<a href="{% url 'logout' %}">로그아웃</a>
+		<!--<br>
+		<a href="{% url 'form' %}">폼 전송 실습</a>-->
+	</body>
+</html>

@@ -1,0 +1,75 @@
+{% load static %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title> Django 실습 </title>
+	</head>
+
+	<body >
+		<div style="font-size:3em; color:blue; text-align:center;">
+			시 간 표
+		</div>
+		
+		<table align="center" border=5 cellspacing=0 cellpadding=0 style="font-size:2em; text-align:center;">
+			<tr style="color:red;">
+				<td></td>
+				<td>월</td>
+				<td>화</td>
+				<td>수</td>
+				<td>목</td>
+				<td>금</td>
+			</tr>
+			<tr style="color:green;">
+				<td>1교시</td>
+				<td><img src="{% static '01.png' %}" width=100 height=100></td>
+				<td><img src="{% static '02.png' %}" width=100 height=100></td>
+				<td><img src="{% static '03.png' %}" width=100 height=100></td>
+				<td><img src="{% static '04.png' %}" width=100 height=100></td>
+				<td><img src="{% static '05.png' %}" width=100 height=100></td>
+			<tr style="color:green;">
+				<td>2교시</td>
+				<td><img src="{% static '06.png' %}" width=100 height=100></td>
+				<td><img src="{% static '07.png' %}" width=100 height=100></td>
+				<td><img src="{% static '08.png' %}" width=100 height=100></td>
+				<td><img src="{% static '09.png' %}" width=100 height=100></td>
+				<td><img src="{% static '10.png' %}" width=100 height=100></td>
+			</tr>
+			<tr style="color:green;">
+				<td>3교시</td>
+				<td><img src="{% static '11.png' %}" width=100 height=100></td>
+				<td><img src="{% static '12.png' %}" width=100 height=100></td>
+				<td><img src="{% static '13.png' %}" width=100 height=100></td>
+				<td><img src="{% static '14.png' %}" width=100 height=100></td>
+				<td><img src="{% static '15.png' %}" width=100 height=100></td>
+			</tr>
+			<tr style="color:green;">
+				<td>4교시</td>
+				<td><img src="{% static '16.png' %}" width=100 height=100></td>
+				<td><img src="{% static '17.png' %}" width=100 height=100></td>
+				<td><img src="{% static '18.png' %}" width=100 height=100></td>
+				<td><img src="{% static '19.png' %}" width=100 height=100></td>
+				<td><img src="{% static '20.png' %}" width=100 height=100></td>
+			</tr>
+			<tr>
+				<td colspan="6"><img src="{% static '21.png' %}" width=100 height=100></td>
+			</tr>
+			<tr style="color:green;">
+				<td>5교시</td>
+				<td><img src="{% static '22.png' %}" width=100 height=100></td>
+				<td><img src="{% static '23.png' %}" width=100 height=100></td>
+				<td><img src="{% static '24.png' %}" width=100 height=100></td>
+				<td><img src="{% static '25.png' %}" width=100 height=100></td>
+				<td><img src="{% static '26.png' %}" width=100 height=100></td>
+			</tr>
+			<tr style="color:green;">
+				<td>6교시</td>
+				<td><img src="{% static '27.png' %}" width=100 height=100></td>
+				<td><img src="{% static '28.png' %}" width=100 height=100></td>
+				<td><img src="{% static '29.png' %}" width=100 height=100></td>
+				<td><img src="{% static '30.png' %}" width=100 height=100></td>
+				<td><img src="{% static '31.png' %}" width=100 height=100></td>
+			</tr>
+		</table>
+	</body>
+</html>
